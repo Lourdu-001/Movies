@@ -4,8 +4,370 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <!--canonical-->
+     <link rel="canonical" href="https://www.delfin.co.in?v=121" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=123"  />
+
+    <!-- lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lexend', sans-serif;
+        }
+        /* header section */
+        header{
+            /* height: 1107.386px; */
+            background-image: url("./assets/Images/company/company_banner.webp");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-color: #EBEBEB;
+        }
+        .header-content{
+            height: calc(460px - 80px);
+        }
+        .header-title{
+            color: #3F3F3F;
+            text-align: left;
+            font-family: Lexend;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 128.846%; /* 67px */
+            letter-spacing: -1.56px;
+        }
+        .header-description{
+            color: #505050;
+            text-align: center;
+            font-family: Lexend;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 155%; /* 31px */
+            letter-spacing: -0.6px;
+        }
+        .gateway{
+            color: #FFF;
+            font-family: Lexend;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 128.846%;
+            letter-spacing: -1.56px;
+            background-color: #9D9D9D;
+            padding: 2px 10px;
+            border-radius: 10px;
+        }
+        .explore-more{
+            padding: 13px 31px;
+            border-radius: 40px;
+            background: #9D9D9D;
+            color: #FFF;
+            font-family: Lexend;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .tower{
+            top: -45%;
+            right: -26%;
+        }
+        /* image section */
+        .image_section{
+            background-image:url("./assets/Images/company/about_us_banner.webp");
+            height: 622px;
+            width:100%;
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
+        /* traditional values */
+        .traditional_values{
+            background-color: #EBEBEB; 
+        }
+        .traditional_values_title{
+            font-size: 40px;
+            line-height: auto;
+            letter-spacing: -0.48px;
+            font-weight: 400;
+            color: #505050;
+        }
+        .traditional_values_content{
+            font-size: 18px;
+            line-height: 28.8px;
+            letter-spacing: -0.48px;
+            font-weight: 300;
+            color: #505050;
+        }
+        /* infinite future */
+        .digital-innovation-title{
+            font-family: Lexend;
+            letter-spacing: 1.92px;
+            color:#3F3F3F;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .vision_image{
+            background-image:url("./assets/Images/company/infinite1.webp");
+            width: 108.89px;
+            height:108.89px;
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+        .mission_image{
+            background-image:url("./assets/Images/company/infinite2.webp");
+            width: 108.89px;
+            height:108.89px;
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+        .infinite_value_image{
+            background-image:url("./assets/Images/company/infinite3.webp");
+            width: 108.89px;
+            height:108.89px;
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+        .infinite_sub_title{
+            letter-spacing: -0.48;
+            color:#505050;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .infinite_sub_content{
+            letter-spacing: -0.48;
+            color:#505050;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 25.8px;
+        }
+        .infinite_section1{
+            width: 56%;
+        }
+        .infinite_section2{
+            background-image:url("./assets/Images/company/infinite_view.webp");
+            width: 100%;
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
+        /* our team */
+        .our-team1{
+            background-image:url("./assets/Images/company/our_team.webp");
+            height: 465.74px;
+            width: 100%;
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+        .our-team1-title{
+            letter-spacing: -0.48;
+            color:#505050;
+            font-weight: 400;
+            font-size: 40px;
+        }
+        .our-team1-content{
+            color:#505050;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 25.8px;
+        }
+        /* let discuss */
+        .let-discuss{
+            background-color:#766B5F;
+        }
+        .let-discuss-layer{
+            background-color:white;
+            border-radius:10px;
+        }
+        .discuss-content{
+            color: #3F3F3F;
+            font-size: 45px;
+            font-weight: 500;
+            line-height: 50px;
+        }
+        .discuss_button{
+            border-radius:50px;
+            padding: 1rem 2rem;
+            background-color: #766B5F;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 21.68px;
+        }
+        @media (max-width: 600px){
+            /* header */
+            .header-content{
+                height: calc(730px - 80px);
+            }
+            /* image section */
+            .image_section{
+                height: 190px;
+                width:100%;
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            /* traditional values */
+            .traditional_values_title{
+                font-size: 32px;
+            }
+            /* infinite future */
+            .infinite_section1{
+                width:100%;
+            }
+            .infinite_section2{
+                display: none;
+            }
+            /* our team */
+            .our-team1-title {
+                font-size: 32px;
+            }
+            .discuss-content{
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
 <body>
-    hello
+    <div class="about-container">
+        <header>
+            <?php require "nav.php"; ?>
+
+            <div class="header-content lg:px-16 px-8 relative">
+                <div class="header-layer h-full flex flex-col items-center justify-center">
+                    <div class="header-title text-center lg:w-7/12">Innovation Sparks
+                        <span class="gateway relative">
+                            Tech
+                            <svg class="absolute tower" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="18.3412" height="18.3412" rx="4.92152" transform="matrix(-1 0 0 1 29.9688 0.374878)" fill="#9D9D9D"/>
+                                <rect width="8.58973" height="8.58973" rx="3.48374" transform="matrix(-1 0 0 1 9.53906 17.809)" fill="#9D9D9D"/>
+                            </svg>
+                        </span>&nbsp; Powered Enablement
+                    </div>
+                    <div class="header-description pt-10 lg:px-0 text-center w-full lg:w-8/12">
+                        Experience the essence of innovation with our tech-powered solutions, enabling seamless progress and growth. Embrace the future, empower your journey
+                    </div>
+                </div>
+            </div>    
+        </header>
+        <section>
+            <!-- image section -->
+            <div class="image_section">  
+            </div>
+            <!-- traditional values -->
+            <div class="traditional_values flex lg:flex-row flex-col lg:px-16 px-8 py-16 gap-16">
+                <div class="traditional_values">
+                    <div class="traditional_values_title">
+                        Innovative<br> Solutions Rooted<br> in Traditional<br> Values
+                    </div>
+                    <svg class="mt-8" width="74" height="3" viewBox="0 0 74 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.1875" width="73" height="3" rx="1.5" fill="#766B5F"/>
+                    </svg>
+                </div>
+                <div class="traditional_values flex-1 grid lg:grid-cols-2 grid-cols-1 gap-10">
+                    <div class="traditional_values_content">
+                        AHL is not just an IT services provider; we are digital architects, creating seamless experiences and fostering success partnerships. Beyond conventional solutions, we innovate and collaborate, driving your business forward with transformative technology.
+                    </div>
+                    <div class="traditional_values_content">
+                        Empowering businesses through transformative technology solutions is at the core of our mission. We strive to be the catalyst that propels your organization forward, leveraging the latest advancements in IT to drive innovation, efficiency, and growth.
+                    </div>
+                    <div class="traditional_values_content">
+                        Whether you're a startup with a groundbreaking idea or an established enterprise aiming for efficiency and growth, we have the expertise to make it happen.
+                    </div>
+                    <div class="traditional_values_content">
+                        With a commitment to excellence and a team of dedicated professionals, we stand at the forefront of technological advancement.
+                    </div>
+                </div>
+            </div>
+            <!-- Infinite future -->
+            <div class="infinite-future lg:px-0 px-8 lg:pl-16 pt-16 flex lg:flex-row flex-col">
+                <div class="infinite_section1 pb-20">
+                    <div class="digital-innovation-title">
+                        INFINITE FUTURES
+                        <svg class="mt-3" width="301" height="4" viewBox="0 0 301 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.274902" y="0.0849609" width="300" height="3.0625" rx="1.53125" fill="#766B5F"/>
+                        </svg>
+                    </div>
+                    <div class="infinite_values flex flex-col gap-20 mt-16">
+                        <div class="infinite_first_section flex lg:flex flex-row flex-col items-end">
+                            <div class="vision flex lg:flex-row flex-col gap-6 w-full lg:w-10/12">
+                                <div class="vision_image"></div>
+                                <div class="flex-1">
+                                    <div class="infinite_sub_title">Vision</div>
+                                    <div class="infinite_sub_content">Illuminating a future where technology fuels boundless possibilities, inspiring innovation and global progress.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infinite_second_section flex flex-col">
+                            <div class="mission flex lg:flex-row flex-col gap-6 w-full lg:w-10/12">
+                                <div class="mission_image"></div>
+                                <div class="flex-1">
+                                    <div class="infinite_sub_title">Mission</div>
+                                    <div class="infinite_sub_content">Empowering businesses through cutting-edge IT solutions, fostering growth and efficiency</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infinite_third_section flex lg:flex flex-row flex-col items-end">
+                            <div class="infinite_value_third flex lg:flex-row flex-col gap-6 w-full lg:w-10/12">
+                                <div class="infinite_value_image"></div>
+                                <div class="flex-1">
+                                    <div class="infinite_sub_title">Values</div>
+                                    <div class="infinite_sub_content">Integrity, Innovation, Collaboration – guiding our commitment to excellence.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infinite_section2 flex-1">
+
+                </div>
+            </div>
+            <!-- our team -->
+            <div class="our-team lg:px-16 px-8 pb-16 pt-12 flex lg:flex-row flex-col items-center">
+                <div class="our-team1 flex-1">
+
+                </div>
+                <div class="our-team2 flex-1 flex flex-col gap-6">
+                    <div class="digital-innovation-title">
+                        OUR TEAM
+                        <svg class="mt-3" width="201" height="4" viewBox="0 0 201 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.0849609" width="200.631" height="3.0625" rx="1.53125" fill="#766B5F"/>
+                        </svg>
+                    </div>
+                    <div class="our-team1-title">AHL Innovators power dynamic innovation excellence</div>
+                    <div class="our-team1-content">AHL Innovators embody the driving force behind dynamic innovation excellence. With a blend of visionary insights and deep expertise, we power transformative solutions, propelling businesses into a realm of unparalleled success. At AHL, we shape the future by seamlessly merging vision with hands-on proficiency, ensuring a constant surge of groundbreaking advancements.</div>
+                </div>
+            </div>
+            <!-- let discuss -->
+            <div class="let-discuss lg:px-16 px-8 py-20">
+                <div class="let-discuss-layer flex lg:flex-row flex-col lg:p-20 p-8 items-center lg:gap-0 gap-10">
+                    <div class="discuss-content lg:w-7/12 w-full">
+                        How to Develop End-to-End Secured Mobile Applications?
+                    </div>
+                    <div class="let-discuss-button flex-1 text-end">
+                        <button class="discuss_button me-0 lg:me-10">
+                            Let discuss
+                            <svg width="20" class="inline ml-2" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.83845 6.93676C1.27741 6.92576 0.813687 7.37166 0.802694 7.9327C0.791701 8.49374 1.2376 8.95746 1.79864 8.96845L1.83845 6.93676ZM18.7314 9.00259C19.1359 8.61365 19.1485 7.97045 18.7596 7.56596L12.4214 0.974473C12.0325 0.569986 11.3893 0.557383 10.9848 0.946323C10.5803 1.33526 10.5677 1.97846 10.9567 2.38295L16.5906 8.24205L10.7315 13.876C10.327 14.2649 10.3144 14.9081 10.7033 15.3126C11.0923 15.7171 11.7355 15.7297 12.1399 15.3407L18.7314 9.00259ZM1.79864 8.96845L18.0073 9.28605L18.0471 7.25435L1.83845 6.93676L1.79864 8.96845Z" fill="white"/>
+                            </svg>  
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <?php require "footer.php"; ?>
+        </section>
+    </div>
 </body>
 </html>
